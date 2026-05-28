@@ -6,17 +6,18 @@ import win32gui
 import sys
 import ctypes
 os.environ["SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS"] = "1"
-os.environ['SDL_VIDEO_WINDOW_POS'] = "1400, 800"
-width = 400
-height = 400
 
 # made by Reeven Vincent V. Ajero
-# SET SCREEN POSITION 
+# Set Window Position
+os.environ['SDL_VIDEO_WINDOW_POS'] = "1400, 800"
+# Set bar POSITION 
 X_POSITION = 25
 Y_POSITION = 50
 
 
 pygame.init()
+width = 400
+height = 400
 screen = pygame.display.set_mode((width,height), pygame.NOFRAME)
 #screen = pygame.display.set_mode((width,height)) 
 
